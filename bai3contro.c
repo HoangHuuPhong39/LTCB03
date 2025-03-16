@@ -5,7 +5,7 @@ int gtln(int *a, int n){
     int max = *ptr;
     for (int i = 0; i < n; i++){
         ptr++;
-        if (*ptr >= a){
+        if (*ptr >= max){
             max = *ptr;
         }
     }return max;
@@ -20,7 +20,7 @@ int main(){
     for (i = 0; i < n; i++){
         scanf("%d", a + i);
     }
-    gtln(a, n);
-    printf("Gia tri lon nhat trong mang la: %d", gtln(a, n));
+    int max = gtln(a, n);
+    printf("Gia tri lon nhat trong mang la: %d", max);
     return 0;
 }
