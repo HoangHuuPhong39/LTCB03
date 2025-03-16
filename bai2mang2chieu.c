@@ -1,7 +1,5 @@
 #include<stdio.h>
 
-
-
 int main (){
     int n, m, x, y;
     printf("Nhap vao so hang va so cot cua 2 ma tran: ");
@@ -11,7 +9,7 @@ int main (){
         return 0;
     for ( int i = 0; i < n; i++){
         for ( int j = 0; j < m; j++){
-            printf("Nhap vao phan tu o hang %d, cot %d: ", i, j);
+            printf("Nhap vao phan tu A[%d][%d]: ", i, j);
             scanf("%d", &a[i][j]);
         }
     }
@@ -23,7 +21,7 @@ int main (){
     }
     for ( int i = 0; i < x; i++){
         for ( int j = 0; j < y; j++){
-            printf("Nhap vao phan tu o hang %d, cot %d: ", i, j);
+            printf("Nhap vao phan tu A[%d][%d]: ", i, j);
             scanf("%d", &b[i][j]);
         }
     }
@@ -34,7 +32,7 @@ int main (){
         }printf("\n");
     }
     int sum[n][m];
-    printf("Tong 2 ma tran trên la: \n");
+    printf("Tong 2 ma tran trÃªn la: \n");
      for ( int i = 0; i < n; i++){
         for ( int j = 0; j < m; j++){
             sum[i][j]=a[i][j]+b[i][j];
